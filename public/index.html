@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>IO GAME</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://pixijs.download/release/pixi.js"></script>
+	</head>
+	<body>
+		<div id="username-screen" style="display: none">
+			<div id="username-form">
+				<div id="input-prompt">Enter a username</div>
+				<hr />
+				<input type="input" autocomplete="off" placeholder="username" />
+				<button id="username-form-submit">Submit</button>
+			</div>
+		</div>
+		<div id="game-screen" style="display: none">
+			<div id="game-container"></div>
+			<div id="message-form">
+				<ul id="messages"></ul>
+				<div id="messages-form-row">
+					<input id="input" autocomplete="off" placeholder="Say something..." />
+					<button id="message-form-submit">Submit</button>
+				</div>
+			</div>
+		</div>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
